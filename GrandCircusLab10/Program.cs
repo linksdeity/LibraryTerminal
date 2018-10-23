@@ -212,7 +212,7 @@ namespace GrandCircusLab10
                 }
             }
 
-            Console.WriteLine("\nThe following books are currently checked out...");
+            Console.WriteLine("\n\nThe following books are currently checked out...");
 
             int checkedOut = 0;
 
