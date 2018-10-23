@@ -49,7 +49,7 @@ namespace GrandCircusLab10
             { 
                 //greet user, ask them if they want to check out a book, return a book, or donate a book
                 int userChoice = GetNumber("Hello! Welcome to the library! What would you like to do today? Please type the number of the option below...\n\n" +
-                               "1) Check out a book\n2) Return a book\n3) Donate a book\n4) Switch book list sort by Title/Author\n\n", 1, 4);
+                               "1) Check out a book\n2) Return a book\n3) Donate a book\n4) Switch book list sort by Title/Author\n5) See book donation credits\n\n", 1, 5);
 
 
                 switch (userChoice)
@@ -120,6 +120,19 @@ namespace GrandCircusLab10
                         Console.WriteLine("\n\n(press anything to continue...)");
                         Console.ReadKey(true);
                         Console.Clear();
+                        break;
+
+                    case 5:
+                        Console.Clear();
+                        Console.WriteLine("Here are the book donation credits...\n");
+                        foreach(string[ ]book in availableBooks)
+                        {
+                            Console.WriteLine(book[1] + " was donated by... " + book[5]);
+                        }
+
+                        Console.WriteLine("\n\n(press any key to continue...)");
+                        Console.ReadKey(true);
+
                         break;
                 }
 
