@@ -127,7 +127,7 @@ namespace GrandCircusLab10
                         Console.WriteLine("Here are the book donation credits...\n");
                         foreach(string[ ]book in availableBooks)
                         {
-                            Console.WriteLine(book[1] + " was donated by... " + book[5]);
+                            Console.WriteLine("'" + book[1] + "' was donated by... " + book[5]);
                         }
 
                         Console.WriteLine("\n\n(press any key to continue...)");
